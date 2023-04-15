@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+#time1{
+    margin-top: 20px;
+    padding: 4px;
+    background-color: antiquewhite;
+    font-size: 2rem;
+   text-align: center;
+}
+#time{
+    margin-top: 20px;
+    padding: 4px;
+    background-color: antiquewhite;
+    font-size: 2rem;
+   text-align: center;
+}
+.container{
+   
+    color: red;
+    background-color: antiquewhite;
+    font-size: 3rem;
+    text-align: center;
+}
+#navi{
+    background-color: aqua;
+    margin: 2px;
+    padding: 4px;
+    text-align:center;
+    font-size: 2rem;
+    font-weight: bold;
+}
+.Home{
+    margin: 2px;
+    padding: 4px;
+}
+</style>
+
+<body>
+    <div id="navi"><span class="Home"> <a href="lec50.html">Home</a> </span><span class="Home">Servics</span><span class="Home">Contact Us</span><span class="Home">Call now</span></div>
+    <div class="container">
+        This website is used to see the time what the good time is going on
+    </div>
+    <div id="time1">The current time is <span id="time"> </span> </div>
+    <script>
+       function displayTime(){
+        time = new Date();
+        console.log(time);
+        document.getElementById('time').innerHTML = time;
+       }
+    setInterval(displayTime,  1000);
+    let greet = ()=>{
+        console.log("good morning");
+    }
+    </script>
+</body>
+</html>
